@@ -1,30 +1,72 @@
 # Projeto Integrado - Especialização em Aprendizado de Máquina e Inteligência Artificial 
 
-***Este projeto mostra todo o processo de treino, validação e teste em um projeto de machine learning.***
+***Este projeto mostra todo o processo de treino, validação e teste em um projeto de machine learning.***</br>
 ***O processo de colocar em produção será também mostrado a seguir.***
 
 O estudo trata dos efeitos de degradação de imagens em redes CNN com grandes melhorias em redes em cápsula.
 
 ***O repositório oficial do projeto está em [Effects of Degradations on Deep Neural Network Architectures](https://arxiv.org/abs/1807.10108).***
+## Citação
+```
+@article{roy2018effects,
+  title={Effects of Degradations on Deep Neural Network Architectures},
+  author={Roy, Prasun and Ghosh, Subhankar and Bhattacharya, Saumik and Pal, Umapada},
+  journal={arXiv preprint arXiv:1807.10108},
+  year={2018}
+}
+```
 
+## Instalação
 
+O Código roda no Python 3.6
 
+#### Instalando dependências:
+```
+pip install numpy scipy pandas matplotlib opencv-python tensorflow keras
+```
+```
+pip install git+https://github.com/prasunroy/mlutils.git
+```
+##### OBS: é necessário instalar o tensorflow 2.0
 
-## License
-MIT License
+## Dataset
+O estudo utiliza dois grupos de dataset: Syntetic Digits e Natural Images
 
-Copyright (c) 2018 Prasun Roy
+### Synthetic Digits
+Foi gerado um dataset sintético com dígitos de 0 a 9 com fundo aleatório. Foram utilizadas uma variação de fontes, escalas e rotação. O total de imagens são 12000. O dataset está disponível em [*Kaggle*](https://www.kaggle.com/prasunroy/synthetic-digits).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+A forma mais prática de baixar é utilizando a [*Kaggle API*](https://github.com/Kaggle/kaggle-api) `kaggle datasets download -d prasunroy/synthetic-digits`
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Abaixo temos um exemplo das imagens sintéticas geradas:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+![image](https://github.com/prasunroy/cnn-on-degraded-images/blob/master/assets/image_01.png)
 
-<br />
-<br />
+### Natural Images
+São 8 classes de diversas fontes: aviões, carros, gatos, cachorros, flores, frutas, motocicletas e pessoas. Representam um total de 6899 imagens. A base de dados também está disponível no [*Kaggle*](https://www.kaggle.com/prasunroy/natural-images).
 
-**Made with** :heart: **and GitHub**
+A forma mais prática de baixar é utilizando a [*Kaggle API*](https://github.com/Kaggle/kaggle-api) `kaggle datasets download -d prasunroy/natural-images`
 
+Abaixo temos um exemplo das imagens naturais geradas:
+
+![image](https://github.com/prasunroy/cnn-on-degraded-images/blob/master/assets/image_02.png)
+
+## Etapa de treinamento
+>Dentro dos arquivos há a seção *`configurations`* a qual define vários parâmetros de treio os quais podem ser alterados diretamente antes do treinamento.
+
+#### Treinando a deep convolutional neural network
+```
+python train_deepcnn.py
+```
+
+#### Treinando a capsule network
+```
+python train_capsnet.py
+```
+
+## Testando os modelos
+>Dentro do arquivo há a seção *`configurations`* a qual também define vários parâmetros de teste. Estes parâmetros também podem ser alterados antes de se executar o script de teste.
+```
+python test.py
+```
 
 
