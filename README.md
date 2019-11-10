@@ -5,7 +5,10 @@
 
 O estudo trata dos efeitos de degradação de imagens em redes CNN com grandes melhorias em redes em cápsula.
 
-***O repositório oficial do projeto está em [Effects of Degradations on Deep Neural Network Architectures](https://arxiv.org/abs/1807.10108).***
+***O artigo do projeto está em [Effects of Degradations on Deep Neural Network Architectures](https://arxiv.org/abs/1807.10108).***
+
+***O repositório oficial do projeto está em [Project GitHub](https://github.com/prasunroy/cnn-on-degraded-images).***
+
 ## Citação
 ```
 @article{roy2018effects,
