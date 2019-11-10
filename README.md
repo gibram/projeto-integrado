@@ -117,7 +117,7 @@ output/natural_images/capsnet/
 
 ```
 
-
+Para colocar em nuvem, pode-se utilizar o [paperspace](https://www.paperspace.com/), por exemplo. É uma opção alternativa ao [sagemaker](https://aws.amazon.com/pt/sagemaker/) da amazon, que atualmente é bastante cara.
 
 
 
