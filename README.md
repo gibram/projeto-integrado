@@ -125,5 +125,5 @@ Se for necessário outro treinamento, pode-se realizar o mesmo em alguma GPU e s
 
 ## Melhorias
 
-Uma melhoria 
+Uma melhoria seria alterar o código do arquivo ***test.py*** para que o mesmo possa receber novas imagens através de upload das mesmas e realizar a inferência.
 
