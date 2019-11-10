@@ -119,5 +119,11 @@ output/natural_images/capsnet/
 
 Para colocar em nuvem, pode-se utilizar o [paperspace](https://www.paperspace.com/), por exemplo. É uma opção alternativa ao [sagemaker](https://aws.amazon.com/pt/sagemaker/) da amazon, que atualmente é bastante cara.
 
+Para colocar em produção em nuvem, basta subir os arquivos gerados na pasta ***/output*** descrita acima juntamente com o arquivo teste e a base de dados. 
 
+Se for necessário outro treinamento, pode-se realizar o mesmo em alguma GPU e subir apenas os resultados (parâmetros) gerados pelo modelo na pasta /output.
+
+## Melhorias
+
+Uma melhoria 
 
