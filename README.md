@@ -1,12 +1,11 @@
 # Projeto Integrado - Especialização em Aprendizado de Máquina e Inteligência Artificial 
 
 ***Este projeto mostra todo o processo de treino, validação e teste em um projeto de machine learning.***
-***Além disso, o processo de colocar em produção será também mostrado a seguir.***
+***O processo de colocar em produção será também mostrado a seguir.***
 
+O estudo trata dos efeitos de degradação de imagens em redes CNN com grandes melhorias em redes em cápsula.
 
-# CNN on Degraded Images
-***A study on the effects of different image degradation models on deep convolutional neural network architectures.*** <br />
-***The official repository for the work on [Effects of Degradations on Deep Neural Network Architectures](https://arxiv.org/abs/1807.10108).***
+***O repositório oficial do projeto está em [Effects of Degradations on Deep Neural Network Architectures](https://arxiv.org/abs/1807.10108).***
 
 <img align='right' height='80' src='https://github.com/prasunroy/hello-world/blob/master/assets/logo.png' />
 
