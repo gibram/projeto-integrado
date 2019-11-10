@@ -53,6 +53,10 @@ Abaixo temos um exemplo das imagens naturais geradas:
 
 ![image](https://github.com/prasunroy/cnn-on-degraded-images/blob/master/assets/image_02.png)
 
+O artigo mostra que a CNN tradicional não consegue detectar de forma acurada imagens rotacionadas ou com grande ruído. Para isso seria necessário a geração de uma base bem maior, rotacionando as imagens e acrescentando ruído nas mesmas para que a inferência possa ser mais acurada.
+
+Já com a rede em cápsula, a mesma é mais robusta para detecção de imagens com ruído ou rotacionadas. Isso mostra uma interessante aplicabilidade tanto em uso de ambientes com imagens ruidosas, tremidas ou com baixa resolução. 
+
 ## Etapa de treinamento
 >Dentro dos arquivos há a seção *`configurations`* a qual define vários parâmetros de treio os quais podem ser alterados diretamente antes do treinamento.
 
