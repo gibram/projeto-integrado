@@ -1,7 +1,7 @@
-Este projeto mostra todo o processo de treino, validação e teste em um projeto de machine learning.
+# Projeto Integrado - Especialização em Aprendizado de Máquina e Inteligência Artificial 
 
-Além disso, o processo de colocar em produção será também mostrado a seguir.
-
+***Este projeto mostra todo o processo de treino, validação e teste em um projeto de machine learning.***
+***Além disso, o processo de colocar em produção será também mostrado a seguir.***
 
 
 # CNN on Degraded Images
