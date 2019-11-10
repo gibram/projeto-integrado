@@ -85,7 +85,7 @@ output/synthetic_digits/inceptionv3/
 ```
 ```
 models/inceptionv3.json
-  É o arquivo em json com a arquitetura da rede cnn gerada para ser utilizada pelo modelo.
+  É o arquivo em json com a arquitetura da rede cnn gerada para ser utilizada pelo modelo com os parâmetros gerados durante o treino.
 
 logs/train.csv
   Contém o resultado do treino:
@@ -110,6 +110,12 @@ output/synthetic_digits/capsnet/
     tensorboard/
 ```
 
+Os mesmos arquivos também são gerados para o modelo de capsulas. Além disso, outra pasta de saída é gerada para as imagens neturais. Os arquivos de saída gerados também são os mesmos:
+```
+output/natural_images/inceptionv3/
+output/natural_images/capsnet/
+
+```
 
 
 
