@@ -73,3 +73,45 @@ python test.py
 ```
 
 ## Colocando em produção
+
+Quando ambas as redes são treinadas, uma pasta com arquivos de saída são gerados:
+
+```
+output/synthetic_digits/inceptionv3/
+    logs/
+    models/
+    checkpoints/
+    tensorboard/
+```
+```
+models/inceptionv3.json
+  É o arquivo em json com a arquitetura da rede cnn gerada para ser utilizada pelo modelo.
+
+logs/train.csv
+  Contém o resultado do treino:
+    epoch,
+    accuracy,
+    loss,
+    val_accuracy,
+    val_loss
+    
+tensorboard/
+  Contém os arquivos de eventos de treino do tensorflow.
+  
+checkpoints/inceptionv3_last.h5
+  Contém de forma sequencial camada a camada do modelo gerado.
+```
+
+```   
+output/synthetic_digits/capsnet/
+    logs/
+    models/
+    checkpoints/
+    tensorboard/
+```
+
+
+
+
+
+
